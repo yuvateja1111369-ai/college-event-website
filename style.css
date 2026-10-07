@@ -1,3 +1,7 @@
+/* ================================
+   RESET
+================================ */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +20,9 @@ body {
 }
 
 
-/* HEADER */
+/* ================================
+   HEADER
+================================ */
 
 header {
     background: #031d3b;
@@ -35,7 +41,9 @@ header p {
 }
 
 
-/* NAVIGATION */
+/* ================================
+   NAVIGATION
+================================ */
 
 nav {
     display: flex;
@@ -54,7 +62,9 @@ nav a:hover {
 }
 
 
-/* SECTIONS */
+/* ================================
+   GENERAL SECTIONS
+================================ */
 
 section {
     padding: 45px 8%;
@@ -71,7 +81,72 @@ section p {
 }
 
 
-/* EVENT DETAILS */
+/* ================================
+   HERO / HOMEPAGE
+================================ */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: #062b55;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-tag {
+    color: #58b9ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 56px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 20px;
+    color: #d6e8f7;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background: #159447;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background: #11b052;
+}
+
+
+/* ================================
+   EVENT DETAILS
+================================ */
 
 .details h3 {
     margin-top: 18px;
@@ -83,14 +158,18 @@ section p {
 }
 
 
-/* REGISTRATION */
+/* ================================
+   REGISTRATION
+================================ */
 
 #registrationContainer {
     max-width: 700px;
 }
 
 
-/* FORM */
+/* ================================
+   REGISTRATION FORM
+================================ */
 
 #registrationForm {
     display: flex;
@@ -106,7 +185,9 @@ section p {
 #registrationForm input,
 #registrationForm select {
     width: 100%;
+
     padding: 15px;
+
     border: 1px solid #6bbcff;
     border-radius: 6px;
 
@@ -126,7 +207,9 @@ section p {
 }
 
 
-/* SUBMIT BUTTON */
+/* ================================
+   SUBMIT BUTTON
+================================ */
 
 #registrationForm button {
     margin-top: 20px;
@@ -150,7 +233,9 @@ section p {
 }
 
 
-/* SUCCESS MESSAGE */
+/* ================================
+   SUCCESS MESSAGE
+================================ */
 
 .success-box {
     display: none;
@@ -175,7 +260,9 @@ section p {
 }
 
 
-/* SUBMIT ANOTHER RESPONSE */
+/* ================================
+   SUBMIT ANOTHER RESPONSE
+================================ */
 
 #anotherResponseButton {
     padding: 14px 22px;
@@ -197,7 +284,9 @@ section p {
 }
 
 
-/* FOOTER */
+/* ================================
+   FOOTER
+================================ */
 
 footer {
     text-align: center;
@@ -208,9 +297,15 @@ footer {
 }
 
 
-/* MOBILE */
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
 
 @media (max-width: 600px) {
+
+    header {
+        padding: 25px 5%;
+    }
 
     header h1 {
         font-size: 28px;
@@ -223,6 +318,23 @@ footer {
 
     section {
         padding: 30px 5%;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .hero-button {
+        padding: 13px 25px;
+        font-size: 16px;
     }
 
 }
