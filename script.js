@@ -87,7 +87,6 @@ form.addEventListener("submit", function (event) {
 
     successMessage.style.display = "block";
 
-
 });
 
 
